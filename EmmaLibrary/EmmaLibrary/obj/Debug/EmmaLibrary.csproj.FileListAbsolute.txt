@@ -1,0 +1,9 @@
+C:\Users\DT\Desktop\Working\LawnAndOrderASP\EmmaLibrary\EmmaLibrary\bin\Debug\Emmas.mdf
+C:\Users\DT\Desktop\Working\LawnAndOrderASP\EmmaLibrary\EmmaLibrary\bin\Debug\Emmas_log.ldf
+C:\Users\DT\Desktop\Working\LawnAndOrderASP\EmmaLibrary\EmmaLibrary\bin\Debug\EmmaLibrary.dll.config
+C:\Users\DT\Desktop\Working\LawnAndOrderASP\EmmaLibrary\EmmaLibrary\bin\Debug\EmmaLibrary.dll
+C:\Users\DT\Desktop\Working\LawnAndOrderASP\EmmaLibrary\EmmaLibrary\bin\Debug\EmmaLibrary.pdb
+C:\Users\DT\Desktop\Working\LawnAndOrderASP\EmmaLibrary\EmmaLibrary\obj\Debug\EmmaLibrary.csproj.AssemblyReference.cache
+C:\Users\DT\Desktop\Working\LawnAndOrderASP\EmmaLibrary\EmmaLibrary\obj\Debug\EmmaLibrary.csproj.CoreCompileInputs.cache
+C:\Users\DT\Desktop\Working\LawnAndOrderASP\EmmaLibrary\EmmaLibrary\obj\Debug\EmmaLibrary.dll
+C:\Users\DT\Desktop\Working\LawnAndOrderASP\EmmaLibrary\EmmaLibrary\obj\Debug\EmmaLibrary.pdb
