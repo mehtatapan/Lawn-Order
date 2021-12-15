@@ -1,6 +1,6 @@
 ﻿<%-- Author: Derek Truong --%>
 
-<%@ Page Title="Receipt Contents" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contents.aspx.cs" Inherits="EmmaApp.ReceiptContents" %>
+<%@ Page Title="Receipt Contents" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="True" CodeBehind="Contents.aspx.cs" Inherits="EmmaApp.ReceiptContents" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style type="text/css">
