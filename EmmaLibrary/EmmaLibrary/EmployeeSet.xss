@@ -8,7 +8,7 @@
   <Shapes>
     <Shape ID="DesignTable:EmployeeLookup" ZOrder="2" X="24" Y="13" Height="134" Width="201" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="83" />
     <Shape ID="DesignTable:Position" ZOrder="3" X="244" Y="157" Height="115" Width="192" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
-    <Shape ID="DesignTable:EmployeeCRUD" ZOrder="1" X="24" Y="155" Height="153" Width="156" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
+    <Shape ID="DesignTable:EmployeeCRUD" ZOrder="1" X="30" Y="179" Height="153" Width="156" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
   </Shapes>
   <Connectors />
 </DiagramLayout>
