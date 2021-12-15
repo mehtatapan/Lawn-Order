@@ -118,6 +118,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Equipment\Default.aspx" />
+    <Content Include="Equipment\Equip_Type.aspx" />
+    <Content Include="Equipment\Manage_Equip\Manage_Equip.aspx" />
+    <Content Include="Equipment\Manufacturer.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -238,6 +242,34 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipment\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment\Equip_Type.aspx.cs">
+      <DependentUpon>Equip_Type.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipment\Equip_Type.aspx.designer.cs">
+      <DependentUpon>Equip_Type.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment\Manage_Equip\Manage_Equip.aspx.cs">
+      <DependentUpon>Manage_Equip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipment\Manage_Equip\Manage_Equip.aspx.designer.cs">
+      <DependentUpon>Manage_Equip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment\Manufacturer.aspx.cs">
+      <DependentUpon>Manufacturer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Equipment\Manufacturer.aspx.designer.cs">
+      <DependentUpon>Manufacturer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
