@@ -16,3 +16,12 @@ C:\Users\Aqualaszun\Documents\NIAGARA COLLEGE\FALL 2021\PROG 1210\Group Project\
 C:\Users\Aqualaszun\Documents\NIAGARA COLLEGE\FALL 2021\PROG 1210\Group Project\PROG-1210-Final_Project\EmmaLibrary\EmmaLibrary\obj\Debug\EmmaLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Aqualaszun\Documents\NIAGARA COLLEGE\FALL 2021\PROG 1210\Group Project\PROG-1210-Final_Project\EmmaLibrary\EmmaLibrary\obj\Debug\EmmaLibrary.dll
 C:\Users\Aqualaszun\Documents\NIAGARA COLLEGE\FALL 2021\PROG 1210\Group Project\PROG-1210-Final_Project\EmmaLibrary\EmmaLibrary\obj\Debug\EmmaLibrary.pdb
+C:\Users\mehta\Downloads\Final-Project\EmmaLibrary\EmmaLibrary\bin\Debug\Emmas.mdf
+C:\Users\mehta\Downloads\Final-Project\EmmaLibrary\EmmaLibrary\bin\Debug\Emmas_log.ldf
+C:\Users\mehta\Downloads\Final-Project\EmmaLibrary\EmmaLibrary\bin\Debug\EmmaLibrary.dll.config
+C:\Users\mehta\Downloads\Final-Project\EmmaLibrary\EmmaLibrary\bin\Debug\EmmaLibrary.dll
+C:\Users\mehta\Downloads\Final-Project\EmmaLibrary\EmmaLibrary\bin\Debug\EmmaLibrary.pdb
+C:\Users\mehta\Downloads\Final-Project\EmmaLibrary\EmmaLibrary\obj\Debug\EmmaLibrary.csproj.AssemblyReference.cache
+C:\Users\mehta\Downloads\Final-Project\EmmaLibrary\EmmaLibrary\obj\Debug\EmmaLibrary.csproj.CoreCompileInputs.cache
+C:\Users\mehta\Downloads\Final-Project\EmmaLibrary\EmmaLibrary\obj\Debug\EmmaLibrary.dll
+C:\Users\mehta\Downloads\Final-Project\EmmaLibrary\EmmaLibrary\obj\Debug\EmmaLibrary.pdb
