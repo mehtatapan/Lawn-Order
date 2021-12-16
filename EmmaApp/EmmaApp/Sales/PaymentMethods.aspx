@@ -1,4 +1,6 @@
-﻿<%@ Page Title="Payment Methods" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PaymentMethods.aspx.cs" Inherits="EmmaApp.PaymentMethods" %>
+﻿<%-- Author: Derek Truong --%>
+
+<%@ Page Title="Payment Methods" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PaymentMethods.aspx.cs" Inherits="EmmaApp.PaymentMethods" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Manage Payment Methods</h2>
