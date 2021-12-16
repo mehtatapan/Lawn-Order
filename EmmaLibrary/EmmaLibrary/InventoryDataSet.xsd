@@ -11,9 +11,9 @@
             <MainSource>
               <DbSource ConnectionRef="EmmasConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        product.id AS ProductID, product.prodName, inventory.invSize, inventory.invQuantity, inventory.invMeasure, inventory.invPrice, product.prodDescription, product.prodBrand, 
-                         product.prodBrand + ', ' + product.prodName AS 'Products'
+                         product.prodBrand + ' ' + product.prodName + ISNULL(', ' + CONVERT(varchar, inventory.invSize) + ' ' + inventory.invMeasure, '') AS 'Products'
 FROM            inventory RIGHT OUTER JOIN
                          product ON inventory.productID = product.id</CommandText>
                     <Parameters />
@@ -94,7 +94,7 @@ SELECT id, prodName, prodDescription, prodBrand FROM product WHERE (id = @id)</C
   <xs:element name="InventoryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="InventoryDataSet" msprop:Generator_UserDSName="InventoryDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="inventory" msprop:Generator_TableClassName="inventoryDataTable" msprop:Generator_TableVarName="tableinventory" msprop:Generator_RowChangedName="inventoryRowChanged" msprop:Generator_TablePropName="inventory" msprop:Generator_RowDeletingName="inventoryRowDeleting" msprop:Generator_RowChangingName="inventoryRowChanging" msprop:Generator_RowEvHandlerName="inventoryRowChangeEventHandler" msprop:Generator_RowDeletedName="inventoryRowDeleted" msprop:Generator_RowClassName="inventoryRow" msprop:Generator_UserTableName="inventory" msprop:Generator_RowEvArgName="inventoryRowChangeEvent">
+        <xs:element name="inventory" msprop:Generator_TableClassName="inventoryDataTable" msprop:Generator_TableVarName="tableinventory" msprop:Generator_TablePropName="inventory" msprop:Generator_RowDeletingName="inventoryRowDeleting" msprop:Generator_RowChangingName="inventoryRowChanging" msprop:Generator_RowEvHandlerName="inventoryRowChangeEventHandler" msprop:Generator_RowDeletedName="inventoryRowDeleted" msprop:Generator_UserTableName="inventory" msprop:Generator_RowChangedName="inventoryRowChanged" msprop:Generator_RowEvArgName="inventoryRowChangeEvent" msprop:Generator_RowClassName="inventoryRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="invSize" msprop:Generator_ColumnVarNameInTable="columninvSize" msprop:Generator_ColumnPropNameInRow="invSize" msprop:Generator_ColumnPropNameInTable="invSizeColumn" msprop:Generator_UserColumnName="invSize" type="xs:decimal" minOccurs="0" />
@@ -139,7 +139,7 @@ SELECT id, prodName, prodDescription, prodBrand FROM product WHERE (id = @id)</C
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="product" msprop:Generator_TableClassName="productDataTable" msprop:Generator_TableVarName="tableproduct" msprop:Generator_RowChangedName="productRowChanged" msprop:Generator_TablePropName="product" msprop:Generator_RowDeletingName="productRowDeleting" msprop:Generator_RowChangingName="productRowChanging" msprop:Generator_RowEvHandlerName="productRowChangeEventHandler" msprop:Generator_RowDeletedName="productRowDeleted" msprop:Generator_RowClassName="productRow" msprop:Generator_UserTableName="product" msprop:Generator_RowEvArgName="productRowChangeEvent">
+        <xs:element name="product" msprop:Generator_TableClassName="productDataTable" msprop:Generator_TableVarName="tableproduct" msprop:Generator_TablePropName="product" msprop:Generator_RowDeletingName="productRowDeleting" msprop:Generator_RowChangingName="productRowChanging" msprop:Generator_RowEvHandlerName="productRowChangeEventHandler" msprop:Generator_RowDeletedName="productRowDeleted" msprop:Generator_UserTableName="product" msprop:Generator_RowChangedName="productRowChanged" msprop:Generator_RowEvArgName="productRowChangeEvent" msprop:Generator_RowClassName="productRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />

@@ -1573,7 +1573,7 @@ namespace EmmaLibrary.InventoryDataSetTableAdapters {
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT        product.id AS ProductID, product.prodName, inventory.invSize, inventory.invQuantity, inventory.invMeasure, inventory.invPrice, product.prodDescription, product.prodBrand, 
-                         product.prodBrand + ', ' + product.prodName AS 'Products'
+                         product.prodBrand + ' ' + product.prodName + ISNULL(', ' + CONVERT(varchar, inventory.invSize) + ' ' + inventory.invMeasure, '') AS 'Products'
 FROM            inventory RIGHT OUTER JOIN
                          product ON inventory.productID = product.id";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
