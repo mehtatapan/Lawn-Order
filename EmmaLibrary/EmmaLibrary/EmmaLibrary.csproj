@@ -68,6 +68,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeeSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EquipmentDataSet.cs">
+      <DependentUpon>EquipmentDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="EquipmentDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
