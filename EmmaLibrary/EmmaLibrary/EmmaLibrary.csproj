@@ -73,6 +73,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EquipmentDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="InventoryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductDetails.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -128,6 +138,28 @@
     </None>
     <None Include="EquipmentDataSet.xss">
       <DependentUpon>EquipmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryDataSet.xsc">
+      <DependentUpon>InventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventoryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InventoryDataSet.xss">
+      <DependentUpon>InventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProductDetails.xsc">
+      <DependentUpon>ProductDetails.xsd</DependentUpon>
+    </None>
+    <None Include="ProductDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductDetails.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProductDetails.xss">
+      <DependentUpon>ProductDetails.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

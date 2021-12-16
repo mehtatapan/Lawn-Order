@@ -186,6 +186,8 @@
     <Content Include="images\ViewAllEquipment.png" />
     <Content Include="images\WarrentyReport.png" />
     <Content Include="images\_MissingIcon.jpg" />
+    <Content Include="Inventory\Default.aspx" />
+    <Content Include="Inventory\Details.aspx" />
     <Content Include="Sales\PaymentMethods.aspx" />
     <Content Include="Sales\Default.aspx" />
     <Content Include="Sales\Receipts\Contents.aspx" />
@@ -313,6 +315,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sales\PaymentMethods.aspx.cs">
       <DependentUpon>PaymentMethods.aspx</DependentUpon>
