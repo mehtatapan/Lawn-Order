@@ -92,6 +92,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="RestockingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RestockingDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ServiceOrderDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -167,6 +172,17 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RestockingDataSet.xsc">
+      <DependentUpon>RestockingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RestockingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RestockingDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RestockingDataSet.xss">
+      <DependentUpon>RestockingDataSet.xsd</DependentUpon>
     </None>
     <None Include="ServiceOrderDataSet.xsc">
       <DependentUpon>ServiceOrderDataSet.xsd</DependentUpon>

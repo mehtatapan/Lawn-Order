@@ -15,21 +15,30 @@ namespace EmmaApp
     {
 
         /// <summary>
-        /// GridView1 control.
+        /// lnkManageEquipments control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.HyperLink lnkManageEquipments;
 
         /// <summary>
-        /// obsManufacturer control.
+        /// lnkManageEquip_Types control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource obsManufacturer;
+        protected global::System.Web.UI.WebControls.HyperLink lnkManageEquip_Types;
+
+        /// <summary>
+        /// lnkManageManufacturer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lnkManageManufacturer;
     }
 }

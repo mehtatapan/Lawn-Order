@@ -123,10 +123,10 @@
     <Content Include="Employee\Default.aspx" />
     <Content Include="Employee\ManageEmployee.aspx" />
     <Content Include="Employee\ManagePosition.aspx" />
-    <Content Include="Equipment\Default.aspx" />
-    <Content Include="Equipment\Equip_Type.aspx" />
-    <Content Include="Equipment\Manage_Equip\Manage_Equip.aspx" />
     <Content Include="Equipment\Manufacturer.aspx" />
+    <Content Include="Equipment\Equip_Type.aspx" />
+    <Content Include="Equipment\Equipment.aspx" />
+    <Content Include="Equipment\Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -188,6 +188,7 @@
     <Content Include="images\_MissingIcon.jpg" />
     <Content Include="Inventory\Default.aspx" />
     <Content Include="Inventory\Details.aspx" />
+    <Content Include="Restocking\Default.aspx" />
     <Content Include="Sales\PaymentMethods.aspx" />
     <Content Include="Sales\Default.aspx" />
     <Content Include="Sales\Receipts\Contents.aspx" />
@@ -285,12 +286,12 @@
     <Compile Include="Employee\ManagePosition.aspx.designer.cs">
       <DependentUpon>ManagePosition.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Equipment\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Equipment\Manufacturer.aspx.cs">
+      <DependentUpon>Manufacturer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Equipment\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Equipment\Manufacturer.aspx.designer.cs">
+      <DependentUpon>Manufacturer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Equipment\Equip_Type.aspx.cs">
       <DependentUpon>Equip_Type.aspx</DependentUpon>
@@ -299,19 +300,19 @@
     <Compile Include="Equipment\Equip_Type.aspx.designer.cs">
       <DependentUpon>Equip_Type.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Equipment\Manage_Equip\Manage_Equip.aspx.cs">
-      <DependentUpon>Manage_Equip.aspx</DependentUpon>
+    <Compile Include="Equipment\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Equipment\Manage_Equip\Manage_Equip.aspx.designer.cs">
-      <DependentUpon>Manage_Equip.aspx</DependentUpon>
+    <Compile Include="Equipment\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Equipment\Manufacturer.aspx.cs">
-      <DependentUpon>Manufacturer.aspx</DependentUpon>
+    <Compile Include="Equipment\Equipment.aspx.cs">
+      <DependentUpon>Equipment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Equipment\Manufacturer.aspx.designer.cs">
-      <DependentUpon>Manufacturer.aspx</DependentUpon>
+    <Compile Include="Equipment\Equipment.aspx.designer.cs">
+      <DependentUpon>Equipment.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -329,6 +330,13 @@
     </Compile>
     <Compile Include="Inventory\Details.aspx.designer.cs">
       <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Restocking\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Restocking\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sales\PaymentMethods.aspx.cs">
       <DependentUpon>PaymentMethods.aspx</DependentUpon>
