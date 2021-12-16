@@ -235,6 +235,6 @@
         </UpdateParameters>
     </asp:ObjectDataSource>
     <p>
-        <asp:HyperLink ID="lnkBackToInventory" runat="server" NavigateUrl="~/Inventory"><big>Back to Inventory</big></asp:HyperLink>
+        <asp:HyperLink ID="lnkBackToInventory" runat="server" NavigateUrl="~/Inventory"><big>Back to Product List</big></asp:HyperLink>
     </p>
 </asp:Content>
