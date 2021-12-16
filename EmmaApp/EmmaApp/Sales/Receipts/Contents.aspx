@@ -84,7 +84,7 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Order&nbsp;Quantity" SortExpression="orlQuantity">
                 <EditItemTemplate>
-                    <asp:TextBox ID="txtQuantity" runat="server" Text='<%# Bind("orlQuantity") %>' TextMode="Number"></asp:TextBox>
+                    <asp:TextBox ID="txtQuantity" runat="server" Text='<%# Bind("orlQuantity") %>' TextMode="Number" ></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="* Quantity is required." ControlToValidate="txtQuantity" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
                     <asp:CompareValidator ID="CompareValidator2" runat="server" ErrorMessage="* Quantity cannot be negative." ControlToValidate="txtQuantity" Operator="GreaterThanEqual" ValueToCompare="0" ForeColor="Red" Display="Dynamic"></asp:CompareValidator>
                 </EditItemTemplate>
