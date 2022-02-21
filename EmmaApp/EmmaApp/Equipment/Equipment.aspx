@@ -1,4 +1,6 @@
-﻿<%@ Page Title="Manage Equipment" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="True" CodeBehind="Equipment.aspx.cs" Inherits="EmmaApp.Manage_Equipment" %>
+﻿<%-- Author: Tapan Piyush Mehta --%>
+
+<%@ Page Title="Manage Equipment" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="True" CodeBehind="Equipment.aspx.cs" Inherits="EmmaApp.Manage_Equipment" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style type="text/css">

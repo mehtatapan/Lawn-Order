@@ -15,6 +15,51 @@ namespace EmmaApp
     {
 
         /// <summary>
+        /// txtMinimumDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMinimumDate;
+
+        /// <summary>
+        /// txtMaximumDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMaximumDate;
+
+        /// <summary>
+        /// ddlPaidFilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlPaidFilter;
+
+        /// <summary>
+        /// btnFilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFilter;
+
+        /// <summary>
+        /// btnClearFilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnClearFilter;
+
+        /// <summary>
         /// lblError control.
         /// </summary>
         /// <remarks>
@@ -42,13 +87,13 @@ namespace EmmaApp
         protected global::System.Web.UI.WebControls.DetailsView dvReceipt;
 
         /// <summary>
-        /// odsReceipt control.
+        /// dvGrandTotal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource odsReceipt;
+        protected global::System.Web.UI.WebControls.DetailsView dvGrandTotal;
 
         /// <summary>
         /// lnkBack control.
@@ -58,6 +103,15 @@ namespace EmmaApp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink lnkBack;
+
+        /// <summary>
+        /// odsReceipt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource odsReceipt;
 
         /// <summary>
         /// odsNextOrdNumber control.
@@ -103,5 +157,23 @@ namespace EmmaApp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ObjectDataSource odsAllOrderTotals;
+
+        /// <summary>
+        /// odsReceiptBetweenDates control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource odsReceiptBetweenDates;
+
+        /// <summary>
+        /// odsGrandTotalsBetweenDates control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource odsGrandTotalsBetweenDates;
     }
 }

@@ -15,30 +15,12 @@ namespace EmmaApp
     {
 
         /// <summary>
-        /// lnkManageEquipments control.
+        /// lnkHome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lnkManageEquipments;
-
-        /// <summary>
-        /// lnkManageEquip_Types control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lnkManageEquip_Types;
-
-        /// <summary>
-        /// lnkManageManufacturer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lnkManageManufacturer;
+        protected global::System.Web.UI.WebControls.HyperLink lnkHome;
     }
 }

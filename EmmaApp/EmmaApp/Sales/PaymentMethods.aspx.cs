@@ -17,7 +17,10 @@ namespace EmmaApp
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!User.Identity.IsAuthenticated)// Kick user to Login page if not logged in
+                Response.Redirect("~/Login");
 
+            lblError.Text = "";// Empty error text
         }
 
         // Disable all child Buttons of a UI control with the property "Enabled"

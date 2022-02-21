@@ -13,6 +13,9 @@ namespace EmmaApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!User.Identity.IsAuthenticated)// Kick user to Login page if not logged in
+                Response.Redirect("~/Login");
+
             if (gvDetails.Rows.Count > 0)
             {
                 dvNew.Visible = false;

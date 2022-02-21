@@ -1,4 +1,6 @@
-﻿<%@ Page Title="Manage Manufacturer" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Manufacturer.aspx.cs" Inherits="EmmaApp.Manufacturer" %>
+﻿<%-- Author: Tapan Piyush Mehta --%>
+
+<%@ Page Title="Manage Manufacturer" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Manufacturer.aspx.cs" Inherits="EmmaApp.Manufacturer" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style type="text/css">

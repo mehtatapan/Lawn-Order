@@ -15,6 +15,33 @@ namespace EmmaApp
     {
 
         /// <summary>
+        /// pnl_WelcomeUser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnl_WelcomeUser;
+
+        /// <summary>
+        /// lbl_UserName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_UserName;
+
+        /// <summary>
+        /// btn_Logout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btn_Logout;
+
+        /// <summary>
         /// MainContent control.
         /// </summary>
         /// <remarks>

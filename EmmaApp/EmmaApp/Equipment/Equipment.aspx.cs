@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Author: Tapan Piyush Mehta
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +13,9 @@ namespace EmmaApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!User.Identity.IsAuthenticated)// Kick user to Login page if not logged in
+                Response.Redirect("~/Login");
+
             dvEquipment.Rows[0].Visible = false;
             dvEquipment.Rows[1].Visible = false;
             dvEquipment.Rows[2].Visible = false;

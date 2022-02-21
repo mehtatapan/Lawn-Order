@@ -15,6 +15,42 @@ namespace EmmaApp
     {
 
         /// <summary>
+        /// txtBrandFilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtBrandFilter;
+
+        /// <summary>
+        /// txtItemFilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtItemFilter;
+
+        /// <summary>
+        /// btnFilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFilter;
+
+        /// <summary>
+        /// btnClearFilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnClearFilter;
+
+        /// <summary>
         /// gvProduct control.
         /// </summary>
         /// <remarks>
@@ -42,6 +78,15 @@ namespace EmmaApp
         protected global::System.Web.UI.WebControls.Label lblError;
 
         /// <summary>
+        /// lnkBack control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lnkBack;
+
+        /// <summary>
         /// obsProducts control.
         /// </summary>
         /// <remarks>
@@ -58,5 +103,14 @@ namespace EmmaApp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ObjectDataSource obsNew;
+
+        /// <summary>
+        /// obsInventoryLikeBrand control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource obsInventoryLikeBrand;
     }
 }

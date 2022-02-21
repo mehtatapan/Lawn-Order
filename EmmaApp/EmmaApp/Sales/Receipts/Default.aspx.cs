@@ -20,7 +20,10 @@ namespace EmmaApp
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblError.Text = "";
+            if (!User.Identity.IsAuthenticated)// Kick user to Login page if not logged in
+                Response.Redirect("~/Login");
+
+            lblError.Text = "";// Empty error text
         }
 
         // Disable all child Buttons of a UI control with the property "Enabled"
@@ -84,6 +87,13 @@ namespace EmmaApp
             dvReceipt.Rows[6].Visible = isInsertMode;
             dvReceipt.Rows[7].Visible = true;
 
+            // Disable filters
+            txtMinimumDate.Enabled = !isInsertMode;
+            txtMaximumDate.Enabled = !isInsertMode;
+            ddlPaidFilter.Enabled = !isInsertMode;
+            btnFilter.Enabled = !isInsertMode;
+            btnClearFilter.Enabled = !isInsertMode;
+
             // Set default values in Insert mode and disable buttons in other controls.
             if (isInsertMode)
             {
@@ -118,6 +128,13 @@ namespace EmmaApp
             {
                 EnableButtons(dvReceipt);
             }
+
+            // Disable filters
+            txtMinimumDate.Enabled = !isEditMode;
+            txtMaximumDate.Enabled = !isEditMode;
+            ddlPaidFilter.Enabled = !isEditMode;
+            btnFilter.Enabled = !isEditMode;
+            btnClearFilter.Enabled = !isEditMode;
         }
 
         protected void gvReceipt_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -222,6 +239,29 @@ namespace EmmaApp
                 e.ExceptionHandled = true;
 
                 lblError.Text = "• Unknown error. Unable to save Receipt. Try again later, or contact your system administrator.";
+            }
+        }
+
+        protected void btnClearFilter_Click(object sender, EventArgs e)
+        {
+            txtMaximumDate.Text = "";
+            txtMinimumDate.Text = "";
+            ddlPaidFilter.SelectedIndex = 0;
+        }
+
+        protected void dvReceipt_ItemInserted(object sender, DetailsViewInsertedEventArgs e)
+        {
+            if (e.Exception == null)
+            {
+                // Insert was successful - Do Something
+                Response.Redirect(Request.RawUrl);    // For some reason, this DetailsView doesn't postback, so reload page
+            }
+            else
+            {
+                // Insert was not successful - Do something else
+                e.ExceptionHandled = true;
+
+                lblError.Text = "• Unknown error. Unable to add Receipt. Try again later, or contact your system administrator.";
             }
         }
     }

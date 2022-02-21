@@ -11,7 +11,8 @@ namespace EmmaApp.Employee
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!User.Identity.IsAuthenticated)// Kick user to Login page if not logged in
+                Response.Redirect("~/Login");
         }
 
         protected void btnCreateNew_Click(object sender, EventArgs e)

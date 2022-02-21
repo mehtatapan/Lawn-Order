@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Custome Details Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="True" CodeBehind="CustomerDetails.aspx.cs" Inherits="EmmaApp.Customers.CustomerDetails" %>
+﻿<%@ Page Title="Custome Details" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="True" CodeBehind="CustomerDetails.aspx.cs" Inherits="EmmaApp.Customers.CustomerDetails" %>
 <%-- Author: Emma Casagrande-Kellam --%>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><asp:Label ID="lblTopHeader" runat="server" Text="Customer Details"></asp:Label></h2>
@@ -101,6 +101,7 @@
                 </asp:TemplateField>
                 <asp:CommandField ShowEditButton="True" ButtonType="Button"/>
             </Fields>
+            <EditRowStyle BackColor="#DFF0D8" />
         </asp:DetailsView>
     </p>
     <p>
@@ -157,6 +158,7 @@
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>
+            <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
         </asp:GridView>
     </p>
     <p>
@@ -223,6 +225,7 @@
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>
+            <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
         </asp:GridView>
     </p>
     <p>

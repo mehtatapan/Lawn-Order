@@ -13,7 +13,8 @@ namespace EmmaApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!User.Identity.IsAuthenticated)// Kick user to Login page if not logged in
+                Response.Redirect("~/Login");
         }
 
         protected void dvNew_DataBound(object sender, EventArgs e)
@@ -51,6 +52,10 @@ namespace EmmaApp
             }
         }
 
-
+        protected void btnClearFilter_Click(object sender, EventArgs e)
+        {
+            txtBrandFilter.Text = "";
+            txtItemFilter.Text = "";
+        }
     }
 }

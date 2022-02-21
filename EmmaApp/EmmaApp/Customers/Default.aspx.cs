@@ -15,7 +15,8 @@ namespace EmmaApp.Customers
         private bool isInsertMode = false;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!User.Identity.IsAuthenticated)// Kick user to Login page if not logged in
+                Response.Redirect("~/Login");
         }
 
         protected void dvCustomer_DataBound(object sender, EventArgs e)
@@ -47,6 +48,13 @@ namespace EmmaApp.Customers
         {
             if (gvCustomers.SelectedIndex != -1)
                 Response.Redirect("~/Customers/CustomerDetails?customer=" + gvCustomers.SelectedValue);
+        }
+
+        protected void btnClearFilter_Click(object sender, EventArgs e)
+        {
+            txtFirstNameFilter.Text = "";
+            txtLastNameFilter.Text = "";
+            txtCityNameFilter.Text = "";
         }
     }
 }

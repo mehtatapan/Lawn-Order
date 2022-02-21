@@ -9,7 +9,7 @@
             display: none;
         }
     </style>
-    <h1><%=Request.QueryString["Name"] %></h1>
+    <h2><%=Request.QueryString["Name"] %></h2>
     <div>
         <asp:DetailsView ID="dvName" runat="server" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="obsForm" OnItemDeleted="dvName_ItemDeleted">
             <FieldHeaderStyle Font-Bold="True" />
@@ -46,6 +46,7 @@
                 </asp:TemplateField>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ButtonType="Button" DeleteText="Delete This Product" />
             </Fields>
+            <EditRowStyle BackColor="#DFF0D8" />
         </asp:DetailsView>
         <br />
     </div>
@@ -97,6 +98,8 @@
                 <ItemStyle CssClass="hiddencol"></ItemStyle>
             </asp:BoundField>
         </Columns>
+        <EditRowStyle BackColor="#DFF0D8" />
+        <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
     </asp:GridView>
     <br />
     <asp:DetailsView ID="dvNew" runat="server" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="obsNew" Height="50px" Width="125px" OnDataBound="dvNew_DataBound" OnItemInserted="dvNew_ItemInserted">
@@ -169,6 +172,7 @@
             </asp:TemplateField>
             <asp:CommandField ShowInsertButton="True" ButtonType="Button" NewText="Add Inventory Info For This Product" />
         </Fields>
+        <InsertRowStyle BackColor="#DFF0D8" />
     </asp:DetailsView>
     <br />
     <br />

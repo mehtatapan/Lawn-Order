@@ -306,3 +306,24 @@ C:\Users\Aqualaszun\Documents\NIAGARA COLLEGE\FALL 2021\PROG 1210\Group Project\
 C:\Users\Aqualaszun\Documents\NIAGARA COLLEGE\FALL 2021\PROG 1210\Group Project\GitHub\EmmaApp\EmmaApp\obj\Debug\EmmaApp.csproj.CopyComplete
 C:\Users\Aqualaszun\Documents\NIAGARA COLLEGE\FALL 2021\PROG 1210\Group Project\GitHub\EmmaApp\EmmaApp\obj\Debug\EmmaApp.dll
 C:\Users\Aqualaszun\Documents\NIAGARA COLLEGE\FALL 2021\PROG 1210\Group Project\GitHub\EmmaApp\EmmaApp\obj\Debug\EmmaApp.pdb
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\EntityFramework.dll
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\EntityFramework.SqlServer.dll
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\EntityFramework.xml
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\EntityFramework.SqlServer.xml
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.Owin.dll
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.Owin.Security.dll
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Owin.dll
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.Owin.xml
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.Owin.Security.xml
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\DT\Desktop\Working\PROG-1210-Final_Project\EmmaApp\EmmaApp\bin\Microsoft.Owin.Security.OAuth.xml

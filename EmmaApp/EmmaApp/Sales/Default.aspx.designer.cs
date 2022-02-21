@@ -15,21 +15,12 @@ namespace EmmaApp
     {
 
         /// <summary>
-        /// lnkManageReceipts control.
+        /// lnkBack control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lnkManageReceipts;
-
-        /// <summary>
-        /// lnkManagePayMethods control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lnkManagePayMethods;
+        protected global::System.Web.UI.WebControls.HyperLink lnkBack;
     }
 }

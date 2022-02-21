@@ -29,6 +29,8 @@
                 </ItemTemplate>
             </asp:TemplateField>
         </Columns>
+        <EditRowStyle BackColor="#DFF0D8" />
+        <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
     </asp:GridView>
     <asp:DetailsView ID="dvPayMethods" runat="server" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="odsPayMethods" OnDataBound="dvPayMethods_DataBound" OnItemInserted="dvPayMethods_ItemInserted">
         <FieldHeaderStyle Font-Bold="True" />
@@ -47,9 +49,10 @@
             <ItemStyle Width="130px" />
             </asp:CommandField>
         </Fields>
+        <InsertRowStyle BackColor="#DFF0D8" />
     </asp:DetailsView>
     <br />
-    <asp:HyperLink ID="lnkBack" runat="server" NavigateUrl="~/Sales"><big>Back to Sales Index</big></asp:HyperLink>
+    <asp:HyperLink ID="lnkBack" runat="server" NavigateUrl="~/Sales"><big>Back to Sales Menu</big></asp:HyperLink>
     <asp:ObjectDataSource ID="odsPayMethods" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="EmmaLibrary.ServiceOrderDataSetTableAdapters.PayMethodTableAdapter" UpdateMethod="Update">
         <DeleteParameters>
             <asp:Parameter Name="Original_id" Type="Int32" />

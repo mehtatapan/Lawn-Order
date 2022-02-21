@@ -17,6 +17,9 @@ namespace EmmaApp
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!User.Identity.IsAuthenticated)// Kick user to Login page if not logged in
+                Response.Redirect("~/Login");
+
             // Get Receipt ID from URL
             Uri uri = new Uri(HttpContext.Current.Request.Url.AbsoluteUri);
             string selectedID = HttpUtility.ParseQueryString(uri.Query).Get("orderNo");

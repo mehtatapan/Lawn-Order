@@ -1,8 +1,39 @@
-﻿<%@ Page Title="Customers Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="True" CodeBehind="Default.aspx.cs" Inherits="EmmaApp.Customers.Default" %>
+﻿<%@ Page Title="Customers" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="True" CodeBehind="Default.aspx.cs" Inherits="EmmaApp.Customers.Default" %>
 <%-- Author: Emma Casagrande-Kellam --%>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><asp:Label ID="lblTopHeader" runat="server" Text="Customers"></asp:Label></h2>
-    <asp:GridView ID="gvCustomers" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="odsCustomers" Width="1100px" OnSelectedIndexChanged="gvCustomers_SelectedIndexChanged">
+    <br />
+    <table>
+        <tr>
+            <td>
+                <b>First Name Contains:</b>
+            </td>
+            <td>
+                <b>Last Name Contains:</b>
+            </td>
+            <td>
+                <b>City Name Contains:</b>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <asp:TextBox ID="txtFirstNameFilter" runat="server" Text=''></asp:TextBox>&nbsp;
+            </td>
+            <td>
+                <asp:TextBox ID="txtLastNameFilter" runat="server" Text=''></asp:TextBox>&nbsp;
+            </td>
+            <td>
+                <asp:TextBox ID="txtCityNameFilter" runat="server" Text=''></asp:TextBox>&nbsp;
+            </td>
+            <td>
+                <asp:Button ID="btnFilter" runat="server" Text="Filter" AutoPostBack="True" />
+                <asp:Button ID="btnClearFilter" runat="server" Text="Clear" AutoPostBack="True" OnClick="btnClearFilter_Click" />
+            </td>
+        </tr>
+    </table>
+    <br />
+    <asp:GridView ID="gvCustomers" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="odsCustomersWithFilters" Width="1100px" OnSelectedIndexChanged="gvCustomers_SelectedIndexChanged" EmptyDataText="&lt;b&gt;No Customers match Filters.&lt;/b&gt;">
         <Columns>
             <asp:CommandField ShowEditButton="True" ShowSelectButton="True" SelectText="Details" ButtonType="Button" />
             <asp:TemplateField HeaderText="First Name" SortExpression="custFirst">
@@ -72,6 +103,8 @@
                 </ItemTemplate>
             </asp:TemplateField>
         </Columns>
+        <EditRowStyle BackColor="#DFF0D8" />
+        <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
     </asp:GridView>
 
     <asp:ObjectDataSource ID="odsCustomers" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="EmmaLibrary.CustomerDataSetTableAdapters.CustomerLookupTableAdapter" UpdateMethod="Update">
@@ -226,8 +259,38 @@
             </asp:TemplateField>
             <asp:CommandField InsertText="Save New" NewText="Add New" ShowInsertButton="True" ButtonType="Button" />
         </Fields>
+        <InsertRowStyle BackColor="#DFF0D8" />
     </asp:DetailsView>
 
     <br />
-    
+    <asp:HyperLink ID="lnkBack" runat="server" NavigateUrl="~/Default"><big>Back to Main Menu</big></asp:HyperLink>
+    <asp:ObjectDataSource ID="odsCustomersWithFilters" runat="server" DeleteMethod="Delete" InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="EmmaLibrary.CustomerDataSetTableAdapters.CustomerLookupWithFiltersTableAdapter" UpdateMethod="Update">
+        <DeleteParameters>
+            <asp:Parameter Name="Original_id" Type="Int32" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="custFirst" Type="String" />
+            <asp:Parameter Name="custLast" Type="String" />
+            <asp:Parameter Name="custPhone" Type="String" />
+            <asp:Parameter Name="custAddress" Type="String" />
+            <asp:Parameter Name="custCity" Type="String" />
+            <asp:Parameter Name="custPostal" Type="String" />
+            <asp:Parameter Name="custEmail" Type="String" />
+        </InsertParameters>
+        <SelectParameters>
+            <asp:ControlParameter ControlID="txtFirstNameFilter" DefaultValue="%" Name="Param1" PropertyName="Text" Type="String" />
+            <asp:ControlParameter ControlID="txtLastNameFilter" DefaultValue="%" Name="Param2" PropertyName="Text" Type="String" />
+            <asp:ControlParameter ControlID="txtCityNameFilter" DefaultValue="%" Name="Param3" PropertyName="Text" Type="String" />
+        </SelectParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="custFirst" Type="String" />
+            <asp:Parameter Name="custLast" Type="String" />
+            <asp:Parameter Name="custPhone" Type="String" />
+            <asp:Parameter Name="custAddress" Type="String" />
+            <asp:Parameter Name="custCity" Type="String" />
+            <asp:Parameter Name="custPostal" Type="String" />
+            <asp:Parameter Name="custEmail" Type="String" />
+            <asp:Parameter Name="Original_id" Type="Int32" />
+        </UpdateParameters>
+    </asp:ObjectDataSource>
 </asp:Content>

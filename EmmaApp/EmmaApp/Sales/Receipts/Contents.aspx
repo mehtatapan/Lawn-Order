@@ -50,6 +50,7 @@
             </asp:TemplateField>
             <asp:CommandField ButtonType="Button" ShowEditButton="True" UpdateText="Save" />
         </Fields>
+        <EditRowStyle BackColor="#DFF0D8" />
     </asp:DetailsView>
     <h3>Order Contents</h3>
     <asp:Label ID="lblOrderLineError" runat="server" Text="" ForeColor="Red"></asp:Label>
@@ -117,6 +118,8 @@
                 <ItemStyle CssClass="hiddencol"></ItemStyle>
             </asp:BoundField>
         </Columns>
+        <EditRowStyle BackColor="#DFF0D8" />
+        <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
     </asp:GridView>
     <asp:DetailsView ID="dvOrderLine" runat="server" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="odsInsertOrder_Line" OnDataBound="dvOrderLine_DataBound" OnItemInserted="dvOrderLine_ItemInserted">
         <FieldHeaderStyle Font-Bold="True" />
@@ -182,6 +185,7 @@
                 <ItemStyle Width="120px" />
             </asp:CommandField>
         </Fields>
+        <InsertRowStyle BackColor="#DFF0D8" />
     </asp:DetailsView>
     <br />
     <asp:DetailsView ID="dvOrderTotal" runat="server" Height="50px" Width="200px" AutoGenerateRows="False" DataSourceID="odsOrderTotal">

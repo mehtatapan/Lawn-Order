@@ -1,32 +1,80 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="EmmaApp._Default" %>
+﻿<%-- Author: Derek Truong --%>
+
+<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="EmmaApp._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="jumbotron">
-        <h2>Tips from Derek:</h2>
-        <p class="lead">You can add your page to the top menu by editing the file "Site.Master". This file is the top menu and bottom footer of each page.</p>
-        <p>The home page of each folder is called "Default.aspx". A hyperlink that points to just the folder name will go to the Default page. For example "/Sales" goes to "/Sales/Default.aspx". You can make neat URLs using this behaviour.</p>
-        <p><strong>BIG WARNING: ASP.NET Web App uses <u>Bootstrap v3.4.1</u> and <u>jQuery v3.4.1</u></strong>. These are older versions than what we are used to. Upgrading to a later version is not as simple as overwriting the files. Don't try unless you're prepared to break everything.<br />(If you find a workaround to use newer Bootstrap and want to do it, you are very cool 😎)</p>
-    </div>
+    <center>
+        <h2>Welcome to Lawn & Order!<br />
+            <small>The Management App for Emma’s Small Engines</small>
+        </h2>
+    </center>
 
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Believe in yourself!</h2>
-            <p>
-                And the power of coffee.
-            </p>
+    <div class="jumbotron bg-success" style="background-color: #DFF0D8">
+        <div class="row">
+            <div class="col-sm-4">
+                <center>
+                    <a runat="server" href="~/Customers">
+                        <img runat="server" src="~/images/ViewAllCustomers.png" alt="Customers Icon" width="221" height="163">
+                    </a>
+                    <br />
+                    <br />
+                    <a runat="server" href="~/Customers" type="button" class="btn btn-success">Customers</a>
+                </center>
+            </div>
+            <div class="col-sm-4">
+                <center>
+                    <a runat="server" href="~/Equipment">
+                        <img runat="server" src="~/images/ViewAllEquipment.png" alt="Equipment Icon" width="221" height="163">
+                    </a>
+                    <br />
+                    <br />
+                    <a runat="server" href="~/Equipment" type="button" class="btn btn-success">Equipment</a>
+                </center>
+            </div>
+            <div class="col-sm-4">
+                <center>
+                    <a runat="server" href="~/Sales">
+                        <img runat="server" src="~/images/Sales.png" alt="Sales Icon" width="221" height="163">
+                    </a>
+                    <br />
+                    <br />
+                    <a runat="server" href="~/Sales" type="button" class="btn btn-success">Sales</a>
+                </center>
+            </div>
         </div>
-        <div class="col-md-4">
-            <h2>You're almost there!</h2>
-            <p>
-                There is only a little bit left of this term!
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Take care of yourself!</h2>
-            <p>
-                Don't forget your health and happiness!
-            </p>
+        <br />
+        <div class="row">
+            <div class="col-sm-4">
+                <center>
+                    <a runat="server" href="~/Employee">
+                        <img runat="server" src="~/images/Employee.png" alt="Employees Icon" width="190" height="163">
+                    </a>
+                    <br />
+                    <br />
+                    <a runat="server" href="~/Employee" type="button" class="btn btn-success">Employees</a>
+                </center>
+            </div>
+            <div class="col-sm-4">
+                <center>
+                    <a runat="server" href="~/Inventory">
+                        <img runat="server" src="~/images/Inventory.png" alt="Inventory Icon" width="180" height="163">
+                    </a>
+                    <br />
+                    <br />
+                    <a runat="server" href="~/Inventory" type="button" class="btn btn-success">Inventory</a>
+                </center>
+            </div>
+            <div class="col-sm-4">
+                <center>
+                    <a runat="server" href="~/Restocking">
+                        <img runat="server" src="~/images/NewOrder Request.png" alt="Restocking Icon" width="221" height="163">
+                    </a>
+                    <br />
+                    <br />
+                    <a runat="server" href="~/Restocking" type="button" class="btn btn-success">Restocking</a>
+                </center>
+            </div>
         </div>
     </div>
 

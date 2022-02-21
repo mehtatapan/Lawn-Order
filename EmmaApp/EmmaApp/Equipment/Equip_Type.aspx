@@ -1,4 +1,6 @@
-﻿<%@ Page Title="Manage Equipment Type" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Equip_Type.aspx.cs" Inherits="EmmaApp.Equip_Type" %>
+﻿<%-- Author: Tapan Piyush Mehta --%>
+
+<%@ Page Title="Manage Equipment Type" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Equip_Type.aspx.cs" Inherits="EmmaApp.Equip_Type" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style type="text/css">
@@ -13,7 +15,7 @@
             font-size: medium;
         }
     </style>
-    <h1 class="auto-style2">Equipment Type</h1>
+    <h2 class="auto-style2">Equipment Type</h2>
         <p class="auto-style2">
             <asp:GridView ID="gvEquip_Type" runat="server" AutoGenerateColumns="False" CssClass="auto-style3" DataKeyNames="id" DataSourceID="obsEquip_Type">
                 <Columns>

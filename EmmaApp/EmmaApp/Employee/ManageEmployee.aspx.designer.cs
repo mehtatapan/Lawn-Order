@@ -15,6 +15,51 @@ namespace EmmaApp.Employee
     {
 
         /// <summary>
+        /// txtFirstNameFilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFirstNameFilter;
+
+        /// <summary>
+        /// txtLastNameFilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtLastNameFilter;
+
+        /// <summary>
+        /// ddlPositionFilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlPositionFilter;
+
+        /// <summary>
+        /// btnFilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFilter;
+
+        /// <summary>
+        /// btnClearFilter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnClearFilter;
+
+        /// <summary>
         /// gvEmployees control.
         /// </summary>
         /// <remarks>
@@ -67,5 +112,14 @@ namespace EmmaApp.Employee
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ObjectDataSource odsPositions;
+
+        /// <summary>
+        /// odsManageEmployeesWithFilters control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource odsManageEmployeesWithFilters;
     }
 }

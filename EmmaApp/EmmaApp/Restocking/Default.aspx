@@ -1,4 +1,6 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="EmmaApp.Restocking" %>
+﻿<%-- Author: Tarunbeer Singh --%>
+
+<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="EmmaApp.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Restocking</h2>
@@ -96,7 +98,7 @@
                     <asp:CheckBoxField DataField="pordPaid" HeaderText="pordPaid" SortExpression="pordPaid" />
                     <asp:CommandField ShowInsertButton="True" />
                 </Fields>
-            </asp:DetailsView>
+            </asp:DetailsView><asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/Default"><big>Back to Main Menu</big></asp:HyperLink>
     <h4>
         
             &nbsp;</h4>
