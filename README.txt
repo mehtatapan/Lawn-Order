@@ -1,4 +1,4 @@
-# PROG1210 Final Project
+# Final Prototype for Lawn & Order
 🚜 Website for a company that sells lawnmower parts.
 💻 Group project built in ASP.NET
 🔍 Main focus is working with real data.
